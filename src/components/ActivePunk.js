@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import more  from '../assets/owner/more.png'
 import twitter  from '../assets/owner/twitter.png'
 import instagram  from '../assets/owner/instagram.png'
@@ -9,28 +9,33 @@ import './ActivePunk.css';
 
 
 
-const ActivePunk = ({selectedpunk, punkListData,  name, id, owner, walletAddress,}) => {
+const ActivePunk = ({selectedPunk, punkListData, owner}) => {
    const [activePunk, setActivePunk] =useState(punkListData[0])
 
-   console.log(punkListData[4])
+
+   useEffect(()=>{
+      setActivePunk(punkListData[selectedPunk])
+      console.log(activePunk)
+
+   }, [selectedPunk, punkListData])
     return ( 
         <div className='activePunk'>
             <div className='actPunkImgCon'>
-                <img  className='actPunkImg' src={activePunkImg}/>
+                <img  className='actPunkImg' src={activePunk.image_original_url}/>
             </div>
              <div className='actPunkDetails'>
                  <div className='actPunkTitleCon'>
-                     <h1>{name} {id}</h1>
+                     <h1>{activePunk.name} #{activePunk.token_id}</h1>
                  </div>
                  <div className='idCon'>
-                     <p>.{id}</p>
+                     <p>.#{activePunk.token_id}</p>
                  </div>
                  <div className='actPunkOwner'>
                       <div className='ownerImgCon'>
-                          <img className='ownerImg'  src={ownerImg}  alt={name} />
+                          <img className='ownerImg'  src={activePunk.owner.profile_img_url}  alt={activePunk.name} />
                       </div>
                       <div className='walletDetails'>
-                          <p className='walletAddress'>{walletAddress}</p>
+                          <p className='walletAddress'>{activePunk.asset_contract.address}</p>
                           <p className='owner'>{owner}</p> 
                       </div>
                       <div className='socialIcons'>

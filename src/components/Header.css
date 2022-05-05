@@ -61,10 +61,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .swicherImg{
     width:50%;
+}
+
+.swicherContainer:hover{
+      height:2.7rem;
+      width: 2.7rem;
 }
 
 .headerButton{
@@ -73,3 +79,17 @@
     height: 3rem;
     border-radius:3rem;
 }   
+
+
+
+@media screen and (max-width:500px){
+.headerButton{
+    display: none;
+}
+
+.navigations>p{
+    margin:0.3rem;
+}
+
+
+}

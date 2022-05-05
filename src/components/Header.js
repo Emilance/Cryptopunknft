@@ -7,6 +7,22 @@ import  './Header.css'
 
 
 const Header = () => {
+
+
+    const  swicthTheme = ()=> {
+     var body =   document.querySelector('body');
+     let header =   document.querySelector('.Header');
+     let activePunk =   document.querySelector('.activePunk');
+    if  ( body.style.backgroundColor=== 'black'){
+        header.style.backgroundColor='brown';
+        activePunk.style.backgroundColor='brown';
+        body.style.backgroundColor='brown';
+       }else
+       {
+     header.style.backgroundColor='black';
+     activePunk.style.backgroundColor='black';
+     body.style.backgroundColor='black';
+        }}
     return ( 
         <div className='Header'>
             <div className='punkLogo'>
@@ -21,7 +37,7 @@ const Header = () => {
                 <p>Marketplace</p>
                 <p>Create</p>
             </div>
-            <div className='swicherContainer'>
+            <div className='swicherContainer' onClick={swicthTheme}>
                 <img src={swicher} className="swicherImg" alt="themeSwicher"/>
             </div>
             <div className='headerButtonConatiner'>

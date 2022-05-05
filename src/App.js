@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import react, { useState, useEffect }  from 'react'
+import React, { useState, useEffect }  from 'react'
 import axios from "axios";
 import PunkCollection from "./components/PunkCollection";
 import ActivePunk from "./components/ActivePunk";
@@ -20,24 +20,33 @@ useEffect(()=>{
       setPunkListData(activepunks.data.assets);
      
       }
+
     
 return getnft
   }, [])
  
 
 
+
   return (
     <div className="App">
     <Header/>
+
+    { punkListData.length > 0  && 
+
+
+    <>
     <ActivePunk 
       punkListData={punkListData}
       selectedPunk={selectedPunk}
-       name="Active PUnk NAme"
-       id="#3"
-       walletAddress= "4989757287572756726q7657q267567qnnjhhAy8787"
        owner="Eminence"
     />
-    <PunkCollection   punkListData={punkListData}/>
+    <PunkCollection
+    punkListData={punkListData}
+    setSelectedPunk={ setSelectedPunk } 
+    />
+    </>
+    }
 
     </div>
   );

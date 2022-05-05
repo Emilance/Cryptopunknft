@@ -4,7 +4,7 @@ import  './Punkcard.css'
 
 const Punkcard = ({image, id, traits, name}) => {
     return ( 
-        <div className='punkCard' onClick={() => console.log(id)} >
+        <div className='punkCard' >
             <div className='punkImgContainer'>
                 <img className='punkImg' src={image} alt="punk Image" />
             </div>
