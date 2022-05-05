@@ -1,0 +1,146 @@
+.activePunk{
+    background-color: black;
+    height:45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid  white ;
+}
+
+.actPunkImgCon{
+    height:15rem;
+    width:17rem;
+    margin: 1rem;
+    
+}
+
+.actPunkImg{
+    width:100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+.actPunkOwner{
+    display: flex;
+    flex:2;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+}
+
+.actPunkTitleCon{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex: 1;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.ownerImgCon{
+    width:2rem;
+    height:2rem;
+}
+
+.ownerImg{
+    width: 100%;
+    height: 100%;
+}
+
+.actPunkDetails{
+    flex:1;
+    margin: 0.5rem;
+}
+
+.socialIcons >img{
+    width:3rem;
+    height: 3rem;
+    margin:0.5rem;
+    cursor: pointer;
+}
+
+.walletDetails{
+    flex:1;
+    margin-left: 1rem;
+    font-weight: 700;
+}
+
+.walletDetails> .owner{
+  color:blueviolet;
+}
+
+.idCon{
+
+}
+
+.idCon>p{
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+
+
+
+
+@media screen and (max-width:1020px){
+    .activePunk{
+        flex-direction: row;
+        height: fit-content;
+    }
+    .actPunkTitleCon > h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .idCon>p{
+       display: none;
+    }
+
+    .actPunkOwner{
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+    }
+    .walletDetails{
+        margin: 1rem;
+    }
+    .walletDetails >p{
+        text-align: center;
+        margin: 0.3rem;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:700px){
+    .activePunk{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .actPunkTitleCon > h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .idCon>p{
+       display: none;
+    }
+
+    .actPunkOwner{
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+    }
+    .walletDetails{
+        margin: 1rem;
+    }
+    .walletDetails >p{
+        text-align: center;
+        margin: 0.3rem;
+    }
+}
+
+

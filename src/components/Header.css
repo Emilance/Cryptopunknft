@@ -1,0 +1,75 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.Header{
+    background-color: black;
+     height:6rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.punkLogoImg{
+    height:4rem;
+    width: 8rem;
+    margin:1rem
+}
+
+.searchContainer{
+    background-color:#1c1c1e;
+    height: 3rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+}
+
+.searchImage{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 1rem;
+}
+
+.searchInput{
+    width: 100%;
+    margin: 1rem;
+    background-color: #1c1c1e;
+    border:none;
+    outline: none;
+    color:white
+}
+
+.navigations{
+    display: flex;
+    color: #83838d;
+    font:1rem;
+    font-weight: 600;
+}
+
+.navigations>p{
+    margin: 1rem;
+}
+
+.swicherContainer {
+    height: 2.5rem;
+    width:2.5rem;
+    background-color: #1c1c1e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swicherImg{
+    width:50%;
+}
+
+.headerButton{
+    width:clamp(3rem, 16vw, 7rem);
+    margin:1rem;
+    height: 3rem;
+    border-radius:3rem;
+}   

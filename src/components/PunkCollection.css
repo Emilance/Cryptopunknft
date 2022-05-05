@@ -1,0 +1,11 @@
+.punkCollection{
+   display: flex;
+   overflow-x: scroll;
+   cursor: pointer;
+
+
+}
+
+.punkCollection::-webkit-scrollbar{
+  
+}
