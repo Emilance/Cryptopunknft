@@ -15,7 +15,7 @@ const ActivePunk = ({selectedPunk, punkListData, owner}) => {
 
    useEffect(()=>{
       setActivePunk(punkListData[selectedPunk])
-      console.log(activePunk)
+    
 
    }, [selectedPunk, punkListData])
     return ( 
