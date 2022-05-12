@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Cryptopunknft/static/css/main.4a4b75aa.css",
-    "main.js": "/Cryptopunknft/static/js/main.af0b2fd2.js",
+    "main.js": "/Cryptopunknft/static/js/main.b63ed412.js",
     "static/js/787.e378efeb.chunk.js": "/Cryptopunknft/static/js/787.e378efeb.chunk.js",
     "static/media/weth.png": "/Cryptopunknft/static/media/weth.4101f1dacb92484cfd3f.png",
     "static/media/cryptopunk-logo.png": "/Cryptopunknft/static/media/cryptopunk-logo.8bee49d57faa44bb66f5.png",
@@ -9,11 +9,11 @@
     "static/media/check.png": "/Cryptopunknft/static/media/check.d53c432729a295e6fd0e.png",
     "index.html": "/Cryptopunknft/index.html",
     "main.4a4b75aa.css.map": "/Cryptopunknft/static/css/main.4a4b75aa.css.map",
-    "main.af0b2fd2.js.map": "/Cryptopunknft/static/js/main.af0b2fd2.js.map",
+    "main.b63ed412.js.map": "/Cryptopunknft/static/js/main.b63ed412.js.map",
     "787.e378efeb.chunk.js.map": "/Cryptopunknft/static/js/787.e378efeb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4a4b75aa.css",
-    "static/js/main.af0b2fd2.js"
+    "static/js/main.b63ed412.js"
   ]
 }
