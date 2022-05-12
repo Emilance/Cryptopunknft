@@ -14,7 +14,7 @@ const   [selectedPunk, setSelectedPunk] = useState(0);
 useEffect(()=>{
   const getnft = async () =>{
  await axios.get(
-    'https://testnets-api.opensea.io/api/v1/assets?asset_contract_address=0x814cCA3cAd4Fe0335aCC9211021aE00A4F14226e&order_direction=asc&offset=0'
+    `https://corsanywhere.herokuapp.com/https://testnets-api.opensea.io/api/v1/assets?asset_contract_address=0x814cCA3cAd4Fe0335aCC9211021aE00A4F14226e&order_direction=asc&offset=0`
     ).then(activepunk  =>  setPunkListData(activepunk.data.assets)
     )
 
